@@ -1,0 +1,17 @@
+import PropTypes from 'prop-types';
+
+function Boton({caracter}){
+
+    return(
+        <>
+            <button className='bg-blue-200 text-blue-800 text-3xl py-5 rounded-xl transition-border ease-in-out duration-200 hover:border-r-8 focus:border-blue-800 active:border-red-400'>{caracter}</button>
+        </>
+    )
+}
+
+
+Boton.propTypes = {
+    caracter: PropTypes.string.isRequired,
+};
+
+export default Boton 
